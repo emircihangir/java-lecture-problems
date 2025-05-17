@@ -1,0 +1,1 @@
+This repository contains codes I've written for my Java lecture assignments.
