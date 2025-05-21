@@ -1,11 +1,13 @@
 package P3;
 
 public class Product{
+    public String productName;
     private float width, height, depth;
 
     public Product(){}
 
-    public Product(float _width, float _height, float _depth){
+    public Product(String _productName, float _width, float _height, float _depth){
+        productName = _productName;
         setWidth(_width);
         setHeight(_height);
         setDepth(_depth);
@@ -34,8 +36,13 @@ public class Product{
     }
 
     public void print(){
+        System.out.println("Product Name: " + productName);
         System.out.println("Width: " + width);
         System.out.println("Height: " + height);
-        System.out.println("depth: " + depth);
+        System.out.println("Depth: " + depth);
+    }
+
+    public float volume(){
+        return width * height * depth;
     }
 }
